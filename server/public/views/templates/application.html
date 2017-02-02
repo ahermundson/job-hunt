@@ -1,0 +1,48 @@
+<div class="formContainer">
+  <form class="newApplication">
+    <label>
+      Company Name:<br />
+      <input type="text" ng-model="app.newApp.company_name">
+    </label>
+    <label>
+      Date Applied:<br />
+      <input type="date" ng-model="app.newApp.date_applied">
+    </label>
+    <label>
+      Company Contact Name:<br />
+      <input type="text" ng-model="app.newApp.company_contact_name">
+    </label>
+    <label>
+      Company Contact Email:<br />
+      <input type="text" ng-model="app.newApp.company_contact_email">
+    </label>
+    <label>
+      Company Contact Number:<br />
+      <input type="text" ng-model="app.newApp.company_contact_number">
+    </label>
+    <label>
+      Where was Job Posted:<br />
+      <input type="text" ng-model="app.newApp.job_posting">
+    </label>
+    <div id="checkboxes">
+      <label>
+        Heard Back?<br />
+        <input type="checkbox" ng-model="app.newApp.heard_back">
+      </label>
+      <label>
+        Got Interview?<br />
+        <input type="checkbox" ng-model="app.newApp.got_interview">
+      </label>
+    </div>
+
+    <label>
+      Interview Date:<br />
+      <input type="date" ng-model="app.newApp.interview_date">
+    </label>
+    <label>
+      Recruiter's Name:<br />
+      <input type="text" ng-model="app.newApp.recruiter_name">
+    </label>
+    <button type="button" ng-click="app.submitNewApp()">Submit</button>
+  </form>
+</div>

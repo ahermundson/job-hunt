@@ -1,0 +1,50 @@
+.headerContainer {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.newApplication {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#checkboxes {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+label {
+  width: 100%;
+  margin-top: 12px;
+}
+
+input[type=text] {
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .formContainer {
+    width: 100%;
+  }
+}
