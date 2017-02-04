@@ -1,3 +1,29 @@
+myApp.controller('ApplicationController', ['$http', '$location', function($http, $location) {
+  console.log("Application Controller running");
+
+  const self = this;
+  self.newApp = {};
+
+  self.submitNewApp = function() {
+    // console.log("SubmitNewApp clicked");
+  }
+
+
+
+}]);
+
+myApp.controller('HomeController', ['$http', '$location', function($http, $location) {
+  console.log("Home Controller running");
+
+  const self = this;
+
+  self.newApplication = function() {
+    $location.path('/application')
+  }
+
+
+}]);
+
 // Gruntfile.js
 
 // our wrapper function (required by grunt and its plugins)
@@ -26,9 +52,9 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'server/public/scripts/controllers/*.js'
+          'server/public/scripts/controllers/*.js', 'gruntfile.js'
         ],
-        dest: 'server/public/dist/js/build/controllers.js',
+        dest: 'server/dist/js/build/controllers.js',
       }
     },
 
