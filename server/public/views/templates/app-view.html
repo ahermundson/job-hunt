@@ -1,0 +1,16 @@
+<h1>Applications</h1>
+<div id="applicationContainer" ng-repeat="applications in view.applications">
+  <p>{{applications.company_name}}</p>
+  <ul>
+    <li>Job Title: {{applications.job_title}}</li>
+    <li>Date Applied: {{applications.date_applied}}</li>
+    <li>Company Contact Name: {{applications.company_contact_name}}</li>
+    <li>Company Contact Email: {{applications.company_contact_email}}</li>
+    <li>Company Contact Number: {{applications.company_contact_number}}</li>
+    <li>Where was job posted: <a href="{{applications.posting_url}}">{{applications.job_posting}}</a></li>
+    <li>Heard Back? {{applications.heard_back}}</li>
+    <li>Got Interview? {{applications.got_interview}}</li>
+    <li>Interview Date: {{applications.interview_date}}</li>
+    <li>Notes: {{applications.notes}}</li>
+  </ul>
+</div>

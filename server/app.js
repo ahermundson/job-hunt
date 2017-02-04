@@ -3,9 +3,13 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
 var portDecision = process.env.PORT || 3000;
+var application = require('./routes/application')
 
 app.use(express.static('server/public'));
 app.use(bodyParser.json());
+
+
+app.use('/application', application);
 
 //Static Files
 app.get('/', function(req, res){

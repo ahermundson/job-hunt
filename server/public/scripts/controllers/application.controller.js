@@ -7,8 +7,14 @@ myApp.controller('ApplicationController', ['$http', '$location', function($http,
   self.submitNewApp = function() {
     console.log("SubmitNewApp clicked");
     console.log(self.newApp);
+    $http({
+      method: 'POST',
+      url: '/application',
+      data: self.newApp
+    })
+    .then(function(response) {
+      console.log("Response form post: ", response);
+      self.newApp = {};
+    })
   }
-
-
-
 }]);
